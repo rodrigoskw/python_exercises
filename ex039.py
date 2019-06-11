@@ -1,8 +1,8 @@
-import datetime
+from datetime import date
 
 ano = int(input('INFORME O ANO DE NASCIMENTO: '))
 alistar = ano + 18
-idade = datetime.datetime.now().year - ano
+idade = date.today().year - ano
 
 if idade > 18:
     print('Você deveria ter se alistado em {}'.format(alistar))
