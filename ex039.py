@@ -1,12 +1,12 @@
 from datetime import date
 
-ano = int(input('INFORME O ANO DE NASCIMENTO: '))
-alistar = ano + 18
-idade = date.today().year - ano
+nascimento = int(input('INFORME O ANO DE NASCIMENTO: '))
+alistar = nascimento + 18
+idade = date.today().year - nascimento
 
 if idade > 18:
     print('Você deveria ter se alistado em {}'.format(alistar))
 elif idade < 18:
     print('Você deve se alistar em {}'.format(alistar))
 else:
-    print('Você deve se alistar nesse ano')
+    print('Você deve se alistar IMEDIATAMENTE')
